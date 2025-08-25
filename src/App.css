@@ -1,0 +1,15 @@
+.person__wrap {
+  padding: 0.8em;
+  border: 1px solid rgb(176, 171, 171);
+  border-radius: 10px;
+  margin: 0.6rem;
+}
+.person__name {
+  font-family: Monserrat, sans-serif;
+}
+.person__info {
+  list-style: none;
+}
+.person__info li {
+  padding: 0.2rem;
+}
