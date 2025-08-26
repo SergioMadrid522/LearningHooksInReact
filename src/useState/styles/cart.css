@@ -1,0 +1,35 @@
+.items__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.items__wrap .items__item {
+  width: 190px;
+}
+
+.items__wrap .items__item img {
+  width: 100%;
+}
+
+.active {
+  fill: rgb(235, 45, 45);
+  transition: all 0.5s ease-in-out;
+  animation: bounceIn 0.5s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.7);
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,59 @@
+.likesCounter__wrap {
+  display: flex;
+  align-items: center;
+}
+.likesCounter__button {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+}
+.bi-heart-fill {
+  width: 18px;
+  fill: black;
+  cursor: pointer;
+}
+
+p {
+  display: inline-block;
+}
+
+.active {
+  fill: rgb(235, 45, 45);
+  transition: all 0.5s ease-in-out;
+  animation: bounceIn 0.5s ease;
+}
+
+.inactive {
+  fill: black; /* color del corazón desactivado */
+  transition: fill 0.5s ease-in-out;
+  animation: bounceOut 0.5s ease;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.7);
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bounceOut {
+  100% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  40% {
+    transform: scale(1.4);
+  }
+  0% {
+    transform: scale(0.7);
+  }
+}
